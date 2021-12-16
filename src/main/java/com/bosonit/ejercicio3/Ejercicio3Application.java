@@ -18,7 +18,6 @@ public class Ejercicio3Application {
 	PersonService getPersonService() {
 		PersonService c = new PersonService();
 		List<City>cities = new ArrayList<>();
-		cities.add(new City("Madrid", 78));
 		c.setCities(cities);
 		return c;
 	}
