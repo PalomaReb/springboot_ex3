@@ -23,9 +23,8 @@ public class Controller1 {
 
     @PostMapping("/controlador1/addCiudad")
     @ResponseBody
-    public void addCity(@RequestParam(value = "name") String cityName,
-                        @RequestParam(value = "population") int population){
-        personService.getCities().add(new City(cityName, population));
+    public void addCity(@RequestBody City city){
+        personService.getCities().add(city);
     }
 }
 
