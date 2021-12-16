@@ -9,7 +9,9 @@ import java.util.List;
 @Service
 public class PersonService implements PersonIntf {
     Person person = new Person();
-    List<City> cities = new ArrayList<>();
+    List<City> cities = new ArrayList<>(
+
+    );
 
     public Person getPerson(){
         return person;
