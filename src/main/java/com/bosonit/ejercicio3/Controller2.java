@@ -18,12 +18,11 @@ public class Controller2 {
         int doubleDeLaEdad = personService.getPerson().getAge()*2;
         personService.getPerson().setAge(doubleDeLaEdad);
         return personService.getPerson();
-
     }
 
     @GetMapping("/controlador2/getCiudad")
     public List<City>city(){
-        return personService.getCity();
+        return personService.getCities();
     }
 
 }

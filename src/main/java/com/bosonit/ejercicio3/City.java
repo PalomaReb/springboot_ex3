@@ -1,8 +1,8 @@
 package com.bosonit.ejercicio3;
 
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class City {
 private String name;
 private int population;

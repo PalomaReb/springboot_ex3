@@ -21,13 +21,11 @@ public class Controller1 {
     }
 
 
-    List<City>cityList = new ArrayList<>();
-
     @PostMapping("/controlador1/addCiudad")
     @ResponseBody
-    public City add(@RequestBody City city){
-        cityList.add(new City(city.getName(), city.getPopulation()));
-        return city;
+    public void addCity(@RequestParam(value = "name") String cityName,
+                        @RequestParam(value = "population") int population){
+        personService.getCities().add(new City(cityName, population));
     }
 }
 

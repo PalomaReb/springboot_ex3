@@ -6,7 +6,7 @@ public interface PersonIntf {
     Person getPerson();
     void setPerson(Person person);
 
-    List<City> getCity();
-    void setCity(List<City> city);
+    List<City> getCities();
+    void setCities(List<City> cities);
 
 }

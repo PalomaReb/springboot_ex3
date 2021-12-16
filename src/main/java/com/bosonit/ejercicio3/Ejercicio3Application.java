@@ -17,8 +17,9 @@ public class Ejercicio3Application {
 	@Bean
 	PersonService getPersonService() {
 		PersonService c = new PersonService();
-		List<City>city = new ArrayList<>();
-		c.setCity(city);
+		List<City>cities = new ArrayList<>();
+		cities.add(new City("Madrid", 78));
+		c.setCities(cities);
 		return c;
 	}
 
