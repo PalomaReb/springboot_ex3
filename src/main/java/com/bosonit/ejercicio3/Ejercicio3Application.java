@@ -26,20 +26,20 @@ public class Ejercicio3Application {
 
 	@Bean (name="bean1")
 	Person getPerson1(){
-		Person p1 = new Person("paloma","madrid",8);
+		Person p1 = new Person("Paloma","Madrid",30);
 		return p1;
 	}
 
 	@Bean (name="bean2")
 	Person getPerson2(){
-		Person p2 = new Person("paloma","mexico",78);
+		Person p2 = new Person("Gustavo","Tokio",78);
 		return p2;
 	}
 
 
 	@Bean(name="bean3")
 	Person getPerson3(){
-		Person p3 = new Person("paloma","lolipop",45);
+		Person p3 = new Person("Alberto","Quebec",45);
 		return p3;
 	}
 
